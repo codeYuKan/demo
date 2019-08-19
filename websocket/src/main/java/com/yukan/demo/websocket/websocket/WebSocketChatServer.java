@@ -48,12 +48,11 @@ public class WebSocketChatServer {
         //在线数加1
         addOnlineCount();
         log.info("new connection join！current online client count:{}", getOnlineCount());
-        try {
-            sendMessage("连接成功");
-            sendMessageTo("dcp", client);
-        } catch (IOException e) {
-            log.error("websocket IO异常");
-        }
+        //try {
+        //    //sendMessage("连接成功");
+        //} catch (IOException e) {
+        //    log.error("websocket IO异常");
+        //}
 
     }
 
