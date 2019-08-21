@@ -17,4 +17,15 @@
 		<module>source-learning</module>
 		<module>basic</module>
 	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>28.0-jre</version>
+			</dependency>
+		</dependencies>
+
+	</dependencyManagement>
 </project>
