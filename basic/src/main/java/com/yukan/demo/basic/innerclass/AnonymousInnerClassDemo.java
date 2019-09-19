@@ -1,4 +1,4 @@
-package com.yukan.demo.basic;
+package com.yukan.demo.basic.innerclass;
 
 /**
  * @author yukan
