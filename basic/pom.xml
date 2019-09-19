@@ -23,7 +23,6 @@
 		</plugins>
 	</build>
 
-
 	<dependencies>
 
 		<!-- springboot -->
@@ -36,12 +35,6 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-		</dependency>
-
-		<!-- third part -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
 		</dependency>
 	</dependencies>
 
