@@ -25,12 +25,6 @@
 
 	<dependencies>
 
-		<!-- springboot -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-logging</artifactId>
-		</dependency>
-
 		<!-- google -->
 		<dependency>
 			<groupId>com.google.guava</groupId>

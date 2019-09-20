@@ -9,6 +9,10 @@ import java.net.URL;
  */
 public class ClassLoaderDemo {
 
+    static class xxx extends ClassLoader{
+
+    }
+
     public static void main(String[] args) {
         URL[] urLs = sun.misc.Launcher.getBootstrapClassPath().getURLs();
         for (URL url : urLs) {
@@ -25,5 +29,8 @@ public class ClassLoaderDemo {
 
         ClassLoader classLoader = String.class.getClassLoader();
         System.out.println(classLoader);
+
+        xxx xx = new xxx();
+        System.out.println(xx.getParent().getParent().getClass());
     }
 }
