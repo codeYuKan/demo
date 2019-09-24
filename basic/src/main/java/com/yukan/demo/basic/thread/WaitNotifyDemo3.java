@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * @email yukan.cn.mail@gmail.com
  */
 @Slf4j
-public class WaitNotifyDemo {
+public class WaitNotifyDemo3 {
 
     static final Object lock = new Object();
 
@@ -31,18 +31,17 @@ public class WaitNotifyDemo {
 
         new Thread(() ->  {
             log.info("Thread2 begin and waiting for lock");
-            synchronized (lock) {
-                try {
-                    log.info("Thread2 get lock");
-                    Thread.sleep(200);
-                    log.info("Thread2 sleep end and notify");
-                    // 没有notify会导致Thread1 一直在等待
-                    lock.notify();
-                    Thread.sleep(200);
-                    log.info("Thread2 end and notify");
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+            try {
+                log.info("Thread2 get lock");
+                Thread.sleep(200);
+                log.info("Thread2 sleep end and notify");
+                // 没有notify会导致Thread1 一直在等待
+                // wait and notify/notifyAll must be in synchronized block
+                lock.notify();
+                Thread.sleep(200);
+                log.info("Thread2 end and notify");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }, "Thread 2").start();
     }
