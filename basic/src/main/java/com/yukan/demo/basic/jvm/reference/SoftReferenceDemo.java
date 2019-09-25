@@ -16,6 +16,9 @@ public class SoftReferenceDemo {
         String str = "str";
         SoftReference<String> stringSoftReference = new SoftReference<>(str);
 
-
+        /**
+         * gc demo
+         * @see com.yukan.demo.source.util.object.FinalizeDemo
+         */
     }
 }
