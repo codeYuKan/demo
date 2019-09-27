@@ -1,4 +1,4 @@
-package com.yukan.demo.source.util.object;
+package com.yukan.demo.source.lang.object;
 
 import lombok.extern.slf4j.Slf4j;
 

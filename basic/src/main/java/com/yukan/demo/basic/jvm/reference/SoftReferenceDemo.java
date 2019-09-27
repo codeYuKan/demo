@@ -18,7 +18,7 @@ public class SoftReferenceDemo {
 
         /**
          * gc demo
-         * @see com.yukan.demo.source.util.object.FinalizeDemo
+         * @see com.yukan.demo.source.lang.object.FinalizeDemo
          */
     }
 }

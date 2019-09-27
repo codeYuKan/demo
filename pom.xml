@@ -23,6 +23,7 @@
 		<module>source-learning</module>
 		<module>basic</module>
 		<module>rpc</module>
+		<module>common</module>
 	</modules>
 
 	<dependencyManagement>

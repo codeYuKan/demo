@@ -1,4 +1,4 @@
-package com.yukan.demo.source.util.object;
+package com.yukan.demo.source.lang.object;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -35,7 +35,7 @@ public class CloneDemo {
     private static void test1() throws CloneNotSupportedException {
         Clothes clothes = new Clothes("black", 100);
         Clothes cloneClothes = clothes.clone();
-        // result:clothes:com.yukan.demo.source.util.object.CloneDemo$Clothes@5419f379,cloneClothes=com.yukan.demo.source.util.object.CloneDemo$Clothes@7dc7cbad
+        // result:clothes:com.yukan.demo.source.lang.object.CloneDemo$Clothes@5419f379,cloneClothes=com.yukan.demo.source.lang.object.CloneDemo$Clothes@7dc7cbad
         log.info("clothes:{},cloneClothes={}", clothes, cloneClothes);
         clothes.setColor("red");
         log.info("clothes.getColor:{},cloneClothes.color():{}", clothes.getColor(), cloneClothes.getColor());
