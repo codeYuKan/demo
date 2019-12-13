@@ -25,7 +25,12 @@
 		<module>rpc</module>
 		<module>common</module>
 		<module>design-pattern</module>
+		<module>leetcode</module>
 	</modules>
+
+	<properties>
+		<com.yukan.demo.version>0.0.1-SNAPSHOT</com.yukan.demo.version>
+	</properties>
 
 	<dependencyManagement>
 		<dependencies>
@@ -33,6 +38,13 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>28.0-jre</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>com.yukan.demo</groupId>
+				<artifactId>common</artifactId>
+				<version>${com.yukan.demo.version}</version>
+				<scope>compile</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

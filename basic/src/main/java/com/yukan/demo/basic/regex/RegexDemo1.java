@@ -27,7 +27,6 @@ public class RegexDemo1 {
         四个\ 前两个表示regex的转义符
         后两个表示真实的 \
         java的\\\\就形成了regex的\\就是一个\
-
          */
         String regex5 = "[-+*/\\\\]";
         Pattern pattern = Pattern.compile(regex);
