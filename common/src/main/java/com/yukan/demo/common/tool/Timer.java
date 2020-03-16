@@ -1,6 +1,7 @@
 package com.yukan.demo.common.tool;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.time.StopWatch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,14 @@ public class Timer {
 
     private long print(List<Long> timestampList) {
         return timestampList.get(timestampList.size() - 1) - timestampList.get(timestampList.size() - 2);
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        Thread.sleep(1000);
+        stopWatch.stop();
+        System.out.println(stopWatch.getTime());
     }
 
 }
