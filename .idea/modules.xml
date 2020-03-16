@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/email/email.iml" filepath="$PROJECT_DIR$/email/email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rpc/rpc.iml" filepath="$PROJECT_DIR$/rpc/rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/source-learning/source-learning.iml" filepath="$PROJECT_DIR$/source-learning/source-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
+    </modules>
+  </component>
+</project>

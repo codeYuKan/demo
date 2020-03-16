@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1becf641-8b08-4a3b-9a65-50278c09d19a" name="Default Changelist" comment="1.regex demo commit&#10;2.stream demo commit&#10;3.field assign order demo commit">
+      <change afterPath="$PROJECT_DIR$/algorithm/target/classes/com/yukan/demo/algorithm/hanoitower/HanoiTowerProblem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/ClassDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/HashCodeDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/array/ArrayTypeDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/classloader/ClassLoaderDemo$xxx.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/classloader/ClassLoaderDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/classloader/FieldAssignOrderDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/dynamicproxy/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/dynamicproxy/ZhangSan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/dynamicproxy/demo1/DynamicProxyDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/dynamicproxy/demo1/ProxySaler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/generic/BasicDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/AnonymousInnerClassDemo$A.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/AnonymousInnerClassDemo$B$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/AnonymousInnerClassDemo$B.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/AnonymousInnerClassDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/oracledemo/LocalClassExample$1PhoneNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/oracledemo/LocalClassExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/overrideinnerclass/BigEgg$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/overrideinnerclass/BigEgg$Yolk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/overrideinnerclass/BigEgg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/overrideinnerclass/Egg$Yolk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/innerclass/overrideinnerclass/Egg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/MethodReferenceDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/lambdaDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/MethodReferencesTest$1ComparisonProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/MethodReferencesTest$1PersonAgeComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/MethodReferencesTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/Person$Sex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/RosterTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/RosterTest$1CheckPersonEligibleForSelectiveService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/RosterTest$CheckPerson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/lambda/oracledemo/RosterTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/localdate/LocalDateDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/localdate/TemporalAdjustersTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/stream/StreamCollectorsDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/java8/stream/StreamReduceDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jmm/SynchronizedDemo$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jmm/SynchronizedDemo$Resource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jmm/SynchronizedDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jmm/SynchronizedListDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jmm/VolatileDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jmm/VolatileHBDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/classloading/passiveinit/ConstClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/classloading/passiveinit/PassiveDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/classloading/passiveinit/PassiveDemo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/classloading/passiveinit/PassiveDemo3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/classloading/passiveinit/SubClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/classloading/passiveinit/SuperClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/reference/SoftReferenceDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/jvm/reference/WeakReferenceDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/lombok/CleanupDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/lombok/NonNullDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/lombok/ValDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/reflect/ReflectDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/regex/RegexDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/regex/RegexDemo11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/regex/RegexDemo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/regex/RegexDemo3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/regex/RegexDemo4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/regex/RegexDemo5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/singleton/SingletonDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/singleton/SingletonDemo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/singleton/SingletonDemo2Serializable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/singleton/SingletonDemo3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/ThreadDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/ThreadDemo2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/ThreadDemo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/ThreadDemo3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/ThreadDemo4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/ThreadDemo5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/WaitNotifyDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/WaitNotifyDemo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/thread/WaitNotifyDemo3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/com/yukan/demo/basic/uri/UriDownloadDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/tool/GUID.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/tool/IDCardGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/tool/TextFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/tool/Ticker$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/tool/Ticker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/tool/Timer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/com/yukan/demo/common/util/RegexUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/Factory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/FactoryA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/FactoryB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/FactoryMethodDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/Product$ProductBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductA$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductA$ProductABuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductA$ProductABuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductB$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductB$ProductBBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductB$ProductBBuilderImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/factorymethod/ProductB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/Award.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/Circle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/ProtoTypeManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/PrototypeDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/PrototypeDemo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/Shape.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/prototype/Square.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/singleton/HungrySingletonDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design-pattern/target/classes/com/yukan/demo/designpattern/singleton/LazySingletonDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/target/classes/com/yukan/demo/rpc/provider/RpcFrameworkDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/object/CloneDemo$Clothes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/object/CloneDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/object/FinalizeDemo$Clothes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/object/FinalizeDemo$Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/object/FinalizeDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/object/GetClassDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/lang/string/InternDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/util/MapDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source-learning/target/classes/com/yukan/demo/source/util/hashmap/ComparableClassForDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/target/classes/com/yukan/demo/websocket/WebsocketApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/target/classes/com/yukan/demo/websocket/config/WebSocketConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/target/classes/com/yukan/demo/websocket/websocket/WebSocketChatServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket/target/test-classes/com/yukan/demo/websocket/WebsocketApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yukan/demo/common/tool/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yukan/demo/common/tool/Timer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="demo" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/basic/src/main/java/com/yukan/demo/basic/collection/CollectionUtilsDemo.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="D:/Java/maven/apache-maven-3.3.9" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PLmXUU8KKpLVPHyNfiin5WgUKE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../demo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\2.personal\demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yukan.demo.basic.regex" />
+      <recent name="com.yukan.demo.designpattern.singleton" />
+      <recent name="com.yukan.demo.common.util" />
+      <recent name="com.yukan.demo.basic.jvm.reference" />
+      <recent name="com.yukan.demo.basic.thread" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\2.personal\demo\basic\src\main\java\com\yukan\demo\basic" />
+      <recent name="D:\workspace\2.personal\demo\basic\src\main\resources" />
+    </key>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="RunManager" selected="Application.EnumSetDemo">
+    <configuration name="EmailDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yukan.demo.email.EmailDemo" />
+      <module name="email" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnumDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yukan.demo.basic.enums.EnumDemo" />
+      <module name="basic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnumSetDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yukan.demo.basic.enums.EnumSetDemo" />
+      <module name="basic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MethodHandleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yukan.demo.basic.invokeoperate.MethodHandleDemo" />
+      <module name="basic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Timer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yukan.demo.common.tool.Timer" />
+      <module name="common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebsocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="websocket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yukan.demo.websocket.WebsocketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EmailDemo" />
+      <item itemvalue="Application.Timer" />
+      <item itemvalue="Application.MethodHandleDemo" />
+      <item itemvalue="Application.EnumDemo" />
+      <item itemvalue="Application.EnumSetDemo" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.WebsocketApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EnumSetDemo" />
+        <item itemvalue="Application.EnumDemo" />
+        <item itemvalue="Application.MethodHandleDemo" />
+        <item itemvalue="Application.Timer" />
+        <item itemvalue="Application.EmailDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_LAMBDA,SHOW_PROPERTIES,ALPHA_COMPARATOR,VISIBILITY_SORTER" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="1. code commit" />
+    <MESSAGE value="1.about rpc" />
+    <MESSAGE value="1.resulve conflict" />
+    <MESSAGE value="1.gitignore commit" />
+    <MESSAGE value="1.lombok demo commit" />
+    <MESSAGE value="1.oracle demo commit" />
+    <MESSAGE value="1.local date demo commit&#10;2.regexUtil commit" />
+    <MESSAGE value="1.design pattern demo commit" />
+    <MESSAGE value="1.demo commit" />
+    <MESSAGE value="1.regex demo commit&#10;2.stream demo commit&#10;3.field assign order demo commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.regex demo commit&#10;2.stream demo commit&#10;3.field assign order demo commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#Inspections" timestamp="1577092269344">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1577092269344" />
+    <state x="595" y="127" key="CommitChangelistDialog2" timestamp="1584349958561">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="595" y="127" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1584349958561" />
+    <state x="595" y="131" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576222078652" />
+    <state x="184" y="92" key="DiffContextDialog" timestamp="1584006481080">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="184" y="92" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1584006481080" />
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1576481948653">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576481948653" />
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.1.bottom" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.1.center" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.1.left" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state width="1877" height="292" key="GridCell.Tab.1.right" timestamp="1584070369148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="292" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1584070369148" />
+    <state width="1877" height="301" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576723481816" />
+    <state x="490" y="194" key="Maven.ArtifactSearchDialog" timestamp="1577352682779">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="490" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577352682779" />
+    <state x="730" y="235" key="RollbackChangesDialog" timestamp="1584006481880">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="730" y="235" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1584006481880" />
+    <state x="461" y="176" key="SettingsEditor" timestamp="1584350052542">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="176" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1584350052542" />
+    <state x="461" y="181" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577092299188" />
+    <state x="552" y="264" key="Vcs.Push.Dialog.v2" timestamp="1584349913286">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="264" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1584349913286" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1576222084179" />
+    <state width="1021" height="912" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1576724345909">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1021" height="912" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1080@0.0.1920.1080" timestamp="1576724345909" />
+    <state x="334" y="149" key="new project wizard" timestamp="1576222119806">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="334" y="149" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1576222119806" />
+    <state x="601" y="265" width="700" height="530" key="recent.locations.popup" timestamp="1577092143386">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="601" y="265" width="700" height="530" key="recent.locations.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577092143385" />
+    <state x="623" y="228" width="672" height="660" key="search.everywhere.popup" timestamp="1584006894874">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="228" width="672" height="660" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1584006894874" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577092399856" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/main/java/com/yukan/demo/basic/thread/ThreadDemo5.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/main/java/com/yukan/demo/basic/dynamicproxy/demo1/ProxySaler.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
