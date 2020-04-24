@@ -1,4 +1,4 @@
-package com.yukan.demo.common.util;
+package com.yukan.demo.component.util;
 
 import org.apache.commons.lang3.StringUtils;
 
