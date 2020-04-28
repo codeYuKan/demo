@@ -25,6 +25,6 @@ public class StreamToMapExceptionDemo {
 
     public void nullExceptionTest() {
         Map<String, Student> studentMap = STUDENTS.stream().collect(Collectors.toMap(Student::getName, Function.identity()));
-        log.info(JSON);
+        //log.info(JSON);
     }
 }
