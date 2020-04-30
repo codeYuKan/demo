@@ -2,11 +2,13 @@ package com.yukan.demo.component.io;
 
 import com.yukan.demo.component.process.Estimate;
 import com.yukan.demo.component.process.Executor;
+import com.yukan.demo.component.process.ThrowingFunction;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -46,6 +48,26 @@ public class FileUtils {
                             Executor.executeWithResultCheck(() -> !f.mkdirs() && !f.isDirectory(), () -> new IOException("Directory '" + f + "' could not be created"));
                             return null;
                         }
+                    }
+            );
+        }
+        return new FileOutputStream(file);
+    }
+
+    @SuppressWarnings("Convert2Lambda")
+    public FileOutputStream openOutputStream2(File file) throws IOException {
+        // 判断文件是否存在 不存在则需要判断 是否需要创建上级目录
+        if (file.exists()) {
+            Estimate.estimate(File::isDirectory, file, () -> new IOException("File '" + file + "' exists but is a directory"));
+            Estimate.negateEstimate(File::canWrite, file, () -> new IOException("File '" + file + "' cannot be written to"));
+        } else {
+            File parentFile = file.getParentFile();
+            Executor.executeWhenWithThrow(
+                    Objects::nonNull,
+                    parentFile,
+                    f -> {
+                        Executor.executeWithResultCheck(() -> !f.mkdirs() && !f.isDirectory(), () -> new IOException("Directory '" + f + "' could not be created"));
+                        return null;
                     }
             );
         }
