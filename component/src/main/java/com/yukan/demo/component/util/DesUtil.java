@@ -7,14 +7,12 @@ import org.apache.commons.lang3.StringUtils;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -58,14 +56,14 @@ public class DesUtil {
 
             // 初始化cipher对象
             cipher.init(Cipher.ENCRYPT_MODE, generateKey());
-            //String cipherText =  new String(cipher.doFinal(plainText.getBytes()), StandardCharsets.UTF_8);
-            //String cipherText =  bytesToString(cipher.doFinal(plainText.getBytes()));
-            String cipherText =  Base64.encode(cipher.doFinal(plainText.getBytes()));
+            //String cipherText = new String(cipher.doFinal(plainText.getBytes()), StandardCharsets.UTF_8);
+            //String cipherText = bytesToString(cipher.doFinal(plainText.getBytes()));
+            String cipherText = Base64.encode(cipher.doFinal(plainText.getBytes()));
             if (StringUtils.isNotEmpty(cipherText)) {
                 return Optional.of(cipherText);
             }
         } catch (Exception e) {
-           log.error("DesUtil.encrypt.error:", e);
+            log.error("DesUtil.encrypt.error:", e);
         }
         return Optional.empty();
     }
