@@ -13,7 +13,7 @@ import java.util.Objects;
  * @email yukan.cn.mail@gmail.com
  */
 @Slf4j
-public class demo {
+public class Solution {
 
     private static int[] test(int[] nums, int target) {
         int find;
