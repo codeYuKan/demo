@@ -98,7 +98,14 @@ public class Solution {
                 aNum = nums1[--aIndex];
                 bNum = nums2[++bIndex];
                 if (aNum <= bNum) {
-                    return getResult(aNum, nums2[bIndex - 1]);
+                    if (bIndex == 1) {
+                        return getResult(aNum, nums2[bIndex - 1]);
+                    }
+                    if (aIndex < 1) {
+                        return getResult(Math.max(aNum, nums2[bIndex - 2]), nums2[bIndex - 1]);
+                    } else {
+                        return getResult(nums1[aIndex - 1], aNum, nums2[bIndex - 2], nums2[bIndex - 1]);
+                    }
                 }
             }
             return getResult(nums2[bIndex - 1], nums2[bIndex]);
@@ -123,10 +130,14 @@ public class Solution {
                 aNum = nums1[--aIndex];
                 bNum = nums2[++bIndex];
                 if (aNum <= bNum) {
-                    return getResult(aNum, nums2[bIndex - 1]);
+                    if (bIndex == 1) {
+                        return getResult(aNum, nums2[bIndex - 1]);
+                    }
+                    //return getResult(Math.max(aNum, nums2[bIndex - 2]), nums2[bIndex - 1]);
+                    return getResult(nums1[aIndex - 1], aNum, nums2[bIndex - 2], nums2[bIndex - 1]);
                 }
             }
-            return getResult(nums1[0], nums2[bIndex]);
+            return getResult(Math.max(nums1[0], nums2[bIndex - 1]), nums2[bIndex]);
         } else {
             int bIndex = bLength - 1;
             int aIndex = leftNum - bIndex - 1;
@@ -150,7 +161,14 @@ public class Solution {
                 bNum = nums2[--bIndex];
                 aNum = nums1[++aIndex];
                 if (bNum <= aNum) {
-                    return getResult(bNum, nums1[aIndex - 1]);
+                    if (aIndex == 1) {
+                        return getResult(bNum, nums1[aIndex - 1]);
+                    }
+                    if (bIndex < 1) {
+                        return getResult(Math.max(bNum, nums1[aIndex - 2]), nums1[aIndex - 1]);
+                    } else {
+                        return getResult(nums2[bIndex - 1], bNum, nums1[aIndex - 2], nums1[aIndex - 1]);
+                    }
                 }
             }
             return getResult(nums1[aIndex - 1], nums1[aIndex]);
@@ -158,8 +176,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] nums1 = {2,3};
-        int[] nums2 = {1,4};
+        int[] nums1 = {4,5,6};
+        int[] nums2 = {1,2,3,7,8};
         System.out.println(findMedianSortedArrays(nums1, nums2));
     }
 }
