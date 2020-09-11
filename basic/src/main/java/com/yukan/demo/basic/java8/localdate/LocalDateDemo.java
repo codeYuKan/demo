@@ -3,7 +3,11 @@ package com.yukan.demo.basic.java8.localdate;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
 
 /**
  * Temporal是接口  所有的日期时间类 实现了该接口
@@ -27,15 +31,20 @@ import java.time.format.DateTimeFormatter;
 public class LocalDateDemo {
 
     public static void test1() {
+        /**
+         * LocalDate 表示一个具体的日期，但不包含具体时间，也不包含时区信息
+         */
         LocalDate localDate1 = LocalDate.MAX;
         LocalDate localDate2 = LocalDate.MIN;
-        LocalDate localDate3 = LocalDate.parse("2019-09-15", DateTimeFormatter.ofPattern("yyyy-mm-dd"));
+        LocalDate localDate3 = LocalDate.parse("2019-09-15", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         LocalDate localDate4 = LocalDate.parse("2019-09-18");
+        LocalDate localDate5 = LocalDate.of(2020,9,11);
 
         log.info("1:{}", localDate1);
         log.info("2:{}", localDate2);
         log.info("3:{}", localDate3);
         log.info("4:{}", localDate4);
+        log.info("5:{}", localDate5);
     }
 
     public static void test2() {
@@ -44,7 +53,28 @@ public class LocalDateDemo {
         localDate.until(localDate2);
     }
 
-    public static void main(String[] args) {
-        test2();
+    /**
+     * 测试LocalDate的一些基本方法
+     */
+    public static void test3() {
+        LocalDate localDate = LocalDate.now();
+        log.info("getYear:{}",localDate.getYear());
+        log.info("getDayOfYear:{}",localDate.getDayOfYear());
+        log.info("getDayOfMonth:{}",localDate.getDayOfMonth());
+        log.info("getDayOfWeek:{}",localDate.getDayOfWeek());
+        log.info("getMonth:{}",localDate.getMonth());
+        log.info("getMonthValue;{}",localDate.getMonthValue());
+        log.info("getChronology:{}",localDate.getChronology());
+        log.info("getEra:{}",localDate.getEra());
+        //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
+        //log.info("{}",localDate.getLong(ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH));
+        //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
+        //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
+        //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
     }
+
+    public static void main(String[] args) {
+        test3();
+    }
+
 }

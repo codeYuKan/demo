@@ -31,7 +31,7 @@ public class StreamDemo {
     }
 
     private <T> void show(Stream<T> stream) {
-        stream.limit(4).forEach(System.out::println);
+        stream.peek(System.out::println).limit(4).forEach(System.out::println);
     }
 
     public void rangeDemo() {
@@ -51,10 +51,6 @@ public class StreamDemo {
 
     public static void main(String[] args) {
         StreamDemo demo = new StreamDemo();
-        demo.streamDemo();
+        demo.randomDemo();
     }
 }
-
-//class Generator implements Supplier<String> {
-//
-//}
