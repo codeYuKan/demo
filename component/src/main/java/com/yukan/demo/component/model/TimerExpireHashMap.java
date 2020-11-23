@@ -1,11 +1,12 @@
 package com.yukan.demo.component.model;
 
-import com.sun.istack.internal.FinalArrayList;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
 
 /**
+ * 不好用 一旦异常定时器就停止了
+ *
  * @author yukan
  * @date 2020/10/10
  * @email yukan.cn.mail@gmail.com
@@ -29,7 +30,7 @@ public class TimerExpireHashMap<K, V> extends HashMap<K, V> {
      */
     private Map<K, Long> timerMap;
 
-    private TimerExpireHashMapCallback<K, V> timerExpireHashMapCallback;
+    //private TimerExpireHashMapCallback<K, V> timerExpireHashMapCallback;
 
     private final TimerTask timerTask = new TimerTask() {
         @Override
@@ -38,14 +39,15 @@ public class TimerExpireHashMap<K, V> extends HashMap<K, V> {
             timerMap.keySet().forEach(key -> {
                 Long keyTime = timerMap.get(key);
                 if (currentTime >= keyTime) {
-                    // 回调相关
-                    if (Objects.nonNull(timerExpireHashMapCallback)) {
-                        try {
-                            timerExpireHashMapCallback.callback(key, get(key));
-                        } catch (RuntimeException re) {
-                            log.error("TimerExpireHashMap.error:", re);
-                        }
-                    }
+                    //// 回调相关
+                    //if (Objects.nonNull(timerExpireHashMapCallback)) {
+                    //    try {
+                    //        timerExpireHashMapCallback.callback(key, get(key));
+                    //    } catch (RuntimeException re) {
+                    //        log.error("TimerExpireHashMap.error:", re);
+                    //    }
+                    //}
+                    TimerExpireHashMap.super.remove(key);
 
                     timerMap.remove(key);
                     remove(key);
@@ -76,12 +78,12 @@ public class TimerExpireHashMap<K, V> extends HashMap<K, V> {
 
     private void init(int initialCapacity) {
         timerMap = new HashMap<>(initialCapacity);
-        timer.schedule(timerTask, CHECK_TIME_SECOND);
+        timer.scheduleAtFixedRate(timerTask, 0, CHECK_TIME_SECOND);
     }
 
     private void init(int initialCapacity, float loadFactor) {
         timerMap = new HashMap<>(initialCapacity, loadFactor);
-        timer.schedule(timerTask, CHECK_TIME_SECOND);
+        timer.scheduleAtFixedRate(timerTask, 0, CHECK_TIME_SECOND);
     }
 
     @Override
@@ -117,9 +119,9 @@ public class TimerExpireHashMap<K, V> extends HashMap<K, V> {
         }
     }
 
-    public void setTimerExpireHashMapCallback(TimerExpireHashMapCallback<K, V> timerExpireHashMapCallback) {
-        this.timerExpireHashMapCallback = timerExpireHashMapCallback;
-    }
+    //public void setTimerExpireHashMapCallback(TimerExpireHashMapCallback<K, V> timerExpireHashMapCallback) {
+    //    this.timerExpireHashMapCallback = timerExpireHashMapCallback;
+    //}
 
     static interface TimerExpireHashMapCallback<K, V> {
         public void callback(K key, V value) throws RuntimeException;

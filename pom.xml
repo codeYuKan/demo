@@ -29,6 +29,8 @@
 		<module>email</module>
 		<module>component</module>
 		<module>springboot</module>
+		<module>reactive-programming</module>
+		<module>rabbitmq</module>
 	</modules>
 
 	<properties>
@@ -111,6 +113,12 @@
 			<artifactId>kotlin-test</artifactId>
 			<version>${kotlin.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.2.10</version>
 		</dependency>
 
 	</dependencies>

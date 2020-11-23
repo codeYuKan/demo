@@ -2,14 +2,15 @@ package com.yukan.demo.basic.java8.localdate;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 
+import static java.time.temporal.TemporalAdjusters.firstDayOfYear;
+
 /**
+ * 只会获取年月日
+ *
  * Temporal是接口  所有的日期时间类 实现了该接口
  * from 依据传入的Temporal对象创建对象实例
  * now 依据系统时钟创建Temporal对象
@@ -71,6 +72,27 @@ public class LocalDateDemo {
         //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
         //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
         //log.info("{}",localDate.getLong(ChronoField.NANO_OF_DAY));
+    }
+
+    public static void test4() {
+        //获取当前年月日
+        LocalDate localDate = LocalDate.now();
+        //构造指定的年月日
+        LocalDate localDate1 = LocalDate.of(2019, 9, 10);
+
+        int year = localDate.getYear();
+        int year1 = localDate.get(ChronoField.YEAR);
+        Month month = localDate.getMonth();
+        int month1 = localDate.get(ChronoField.MONTH_OF_YEAR);
+        int day = localDate.getDayOfMonth();
+        int day1 = localDate.get(ChronoField.DAY_OF_MONTH);
+        DayOfWeek dayOfWeek = localDate.getDayOfWeek();
+        int dayOfWeek1 = localDate.get(ChronoField.DAY_OF_WEEK);
+    }
+
+    public static void test5() {
+        LocalDate localDate = LocalDate.now();
+        LocalDate localDate1 = localDate.with(firstDayOfYear());
     }
 
     public static void main(String[] args) {

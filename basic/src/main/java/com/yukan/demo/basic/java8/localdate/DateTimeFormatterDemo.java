@@ -53,6 +53,18 @@ public class DateTimeFormatterDemo {
         System.out.println(fmt.parse(str2));
     }
 
+    public static void test3() {
+        LocalDate localDate = LocalDate.of(2019, 9, 10);
+        String s1 = localDate.format(DateTimeFormatter.BASIC_ISO_DATE);
+        String s2 = localDate.format(DateTimeFormatter.ISO_LOCAL_DATE);
+        //自定义格式化
+        DateTimeFormatter dateTimeFormatter =   DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String s3 = localDate.format(dateTimeFormatter);
+
+        LocalDate localDate1 = LocalDate.parse("20190910", DateTimeFormatter.BASIC_ISO_DATE);
+        LocalDate localDate2 = LocalDate.parse("2019-09-10", DateTimeFormatter.ISO_LOCAL_DATE);
+    }
+
     public static void main(String[] args) {
         test1();
         //test2();
