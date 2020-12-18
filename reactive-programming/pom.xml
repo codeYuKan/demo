@@ -15,6 +15,13 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<version>2.4.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 			<version>2.3.4.RELEASE</version>
 		</dependency>
@@ -32,6 +39,15 @@
 			<version>3.4.0</version>
 		</dependency>
 		<!--		reactor end   -->
+
+		<!-- rxjava start -->
+		<dependency>
+			<groupId>io.reactivex.rxjava2</groupId>
+			<artifactId>rxjava</artifactId>
+			<version>2.2.20</version>
+		</dependency>
+		<!-- rxjava end  -->
+
 
 	</dependencies>
 

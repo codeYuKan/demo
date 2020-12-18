@@ -3,8 +3,6 @@ package com.yukan.demo.reactive.reactor;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 
-import java.util.Arrays;
-
 /**
  * @author yukan
  * @date 2020/11/18
@@ -13,7 +11,7 @@ import java.util.Arrays;
 @Slf4j
 public class FluxDemo {
 
-    public void test() {
+    public static void test() {
         Flux flux1 = Flux.just("a","b");
         String[] strArr = {"a", "b", "c"};
         Flux flux2 = Flux.fromArray(strArr);
@@ -25,7 +23,25 @@ public class FluxDemo {
 
     }
 
-    public void test1() {
+    public static void test2() {
+        Flux.generate(sink -> {
+            sink.next("hello");
+            sink.currentContext().put("1","2");
+            //sink.next("1");
+            //sink.next("hello3");
+            //sink.next("hello4");
+            //sink.next("hello5");
+            sink.currentContext().get("1");
+            sink.complete();
+        }).subscribe(System.out::println);
+    }
+
+    public static void test1() {
         Flux.just("a","b").subscribe(System.out::println);
+    }
+
+    public static void main(String[] args) {
+        char d = (char)70000;
+        System.out.println(d + " " +(int)d );
     }
 }
