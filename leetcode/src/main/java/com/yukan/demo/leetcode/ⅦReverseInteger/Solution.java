@@ -89,6 +89,6 @@ public class Solution {
         log.info("{}", reverse(-1257891202));
 
 
-        System.out.println(10E3);
+        //System.out.println(10E3);
     }
 }
