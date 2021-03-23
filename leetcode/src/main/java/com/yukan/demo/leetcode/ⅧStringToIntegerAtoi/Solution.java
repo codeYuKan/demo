@@ -120,7 +120,7 @@ public class Solution {
         }
 
         if (s.startsWith("0")) {
-            s = s.replace("^(0+)", "");
+            s = s.replaceAll("^(0+)", "");
         }
 
         long result = 0;
@@ -146,13 +146,45 @@ public class Solution {
         return (int) result;
     }
 
+
+    public static int myAtoi2(String s) {
+        // 完成第一步 去除左侧空格
+        s = s.trim();
+        if ("".equals(s)) {
+            return 0;
+        }
+        // 提取+或者-
+        char sign = s.charAt(0);
+        int signFlag = 1;
+        int index = 0;
+        if (sign == '+') {
+            index = 1;
+        } else if (sign == '-') {
+            signFlag = -1;
+            index = 1;
+        }
+
+        long result = 0;
+        while (index < s.length() && Character.isDigit(s.charAt(index))) {
+            result = result * 10 + (s.charAt(index++) - '0');
+            if (signFlag * result >= Integer.MAX_VALUE) {
+                return Integer.MAX_VALUE;
+            }
+            if (signFlag * result <= Integer.MIN_VALUE) {
+                return Integer.MIN_VALUE;
+            }
+        }
+
+        return signFlag * (int)result;
+    }
+
     public static void main(String[] args) {
         //// 2147483647
         //System.out.println(Integer.MAX_VALUE);
         ////-2147483648
         //System.out.println(Integer.MIN_VALUE);
 
-        System.out.println(myAtoi("  0000000000012345678"));
-
+        //System.out.println(myAtoi2("42"));
+        System.out.println(-Integer.MAX_VALUE / 10);
     }
 }
