@@ -56,4 +56,56 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class Solution {
+
+    public static boolean isMatch(String s, String p) {
+        int sLength = s.length();
+        int pLength = p.length();
+
+        int sIndex = 0;
+        int pIndex = 0;
+        int impPIndex = pIndex;
+
+        boolean secondFlag = true;
+
+        char firstChar;
+        char secondChar;
+        while (pIndex < pLength) {
+            // 去除字符规律p的第一个字符
+            firstChar = p.charAt(pIndex++);
+            if (pIndex == pLength) {
+                secondFlag = false;
+            } else {
+                secondChar = p.charAt(pIndex);
+            }
+            if (firstChar == '*') {
+                for (int i = 0;i <= sLength - sIndex; i++) {
+                    // 可匹配的数量从0个到剩余数量
+                    //if (isMatch(s.substring(sIndex), p.substring(pIndex))) {
+                    //    return true;
+                    //}
+                }
+                return false;
+            } else if (sIndex < sLength){
+                if (firstChar == '.') {
+
+                } else {
+                    // 校验两者是否一致
+                    if (firstChar != s.charAt(sIndex)) {
+                        return false;
+                    }
+                }
+            } else {
+                //sIndex越界
+                return false;
+            }
+            sIndex++;
+        }
+
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        //System.out.println(isMatch("aab", "c*a*b"));
+    }
 }
