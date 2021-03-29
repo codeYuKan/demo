@@ -63,36 +63,26 @@ public class Solution {
 
         int sIndex = 0;
         int pIndex = 0;
-        int impPIndex = pIndex;
-
-        boolean secondFlag = true;
 
         char firstChar;
-        char secondChar;
         while (pIndex < pLength) {
             // 去除字符规律p的第一个字符
             firstChar = p.charAt(pIndex++);
-            if (pIndex == pLength) {
-                secondFlag = false;
-            } else {
-                secondChar = p.charAt(pIndex);
-            }
-            if (firstChar == '*') {
+            // pIndex != pLength表明后续还有，才能获取第二项，判断是否为*
+            if (pIndex != pLength && p.charAt(pIndex) == '*') {
                 for (int i = 0;i <= sLength - sIndex; i++) {
                     // 可匹配的数量从0个到剩余数量
-                    //if (isMatch(s.substring(sIndex), p.substring(pIndex))) {
-                    //    return true;
-                    //}
+                    if (i > 0 && firstChar != '.' && s.charAt(sIndex + i - 1) != firstChar) {
+                        return false;
+                    }
+                    if (isMatch(s.substring(sIndex + i), p.substring(pIndex + 1))) {
+                        return true;
+                    }
                 }
                 return false;
             } else if (sIndex < sLength){
-                if (firstChar == '.') {
-
-                } else {
-                    // 校验两者是否一致
-                    if (firstChar != s.charAt(sIndex)) {
-                        return false;
-                    }
+                if (firstChar != '.' && firstChar != s.charAt(sIndex)) {
+                    return false;
                 }
             } else {
                 //sIndex越界
@@ -100,12 +90,12 @@ public class Solution {
             }
             sIndex++;
         }
-
-
-        return true;
+        return sIndex == sLength;
     }
 
     public static void main(String[] args) {
-        //System.out.println(isMatch("aab", "c*a*b"));
+        //System.out.println(isMatch("mississippi", "mis*is*p*."));
+        System.out.println(isMatch("issippi", "is*p*."));
+        //System.out.println(isMatch("ippi", "p*."));
     }
 }
