@@ -66,7 +66,7 @@ public class DateTimeFormatterDemo {
     }
 
     public static void main(String[] args) {
-        test1();
+        test3();
         //test2();
         //DateTimeFormatter.ofPattern("yyyy[/][-]MM[/][-][dd][ HH:mm:ss]").parse("202009");
     }
