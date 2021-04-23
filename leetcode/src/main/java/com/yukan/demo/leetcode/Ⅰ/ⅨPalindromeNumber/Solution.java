@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅨPalindromeNumber;
+package com.yukan.demo.leetcode.Ⅰ.ⅨPalindromeNumber;
 
 import lombok.extern.slf4j.Slf4j;
 

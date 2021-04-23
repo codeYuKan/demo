@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅤLongestPalindromicSubstring;
+package com.yukan.demo.leetcode.Ⅰ.ⅤLongestPalindromicSubstring;
 
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;

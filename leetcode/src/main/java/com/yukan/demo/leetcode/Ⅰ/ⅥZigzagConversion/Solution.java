@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅥZigzagConversion;
+package com.yukan.demo.leetcode.Ⅰ.ⅥZigzagConversion;
 
 import lombok.extern.slf4j.Slf4j;
 

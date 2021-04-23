@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅦReverseInteger;
+package com.yukan.demo.leetcode.Ⅰ.ⅦReverseInteger;
 
 import lombok.extern.slf4j.Slf4j;
 

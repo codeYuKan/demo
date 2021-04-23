@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅣMedianOfTwoSortedArrays;
+package com.yukan.demo.leetcode.Ⅰ.ⅣMedianOfTwoSortedArrays;
 
 import lombok.extern.slf4j.Slf4j;
 

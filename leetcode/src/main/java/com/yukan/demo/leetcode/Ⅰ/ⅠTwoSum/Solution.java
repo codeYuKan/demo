@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅠTwoSum;
+package com.yukan.demo.leetcode.Ⅰ.ⅠTwoSum;
 
 import lombok.extern.slf4j.Slf4j;
 

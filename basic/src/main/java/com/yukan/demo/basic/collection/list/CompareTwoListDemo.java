@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * @email yukan.cn.mail@gmail.com
  */
 @Slf4j
-public class CheckDiffList {
+public class CompareTwoListDemo {
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();

@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.ⅢLongestSubstringWithoutRepeatingCharacters;
+package com.yukan.demo.leetcode.Ⅰ.ⅢLongestSubstringWithoutRepeatingCharacters;
 
 import lombok.extern.slf4j.Slf4j;
 
