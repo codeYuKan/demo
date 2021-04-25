@@ -1,4 +1,4 @@
-package com.yukan.demo.leetcode.Ⅱ.ⅠⅩContainerWithMostWater;
+package com.yukan.demo.leetcode.Ⅱ.ⅪContainerWithMostWater;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -91,26 +91,35 @@ public class Solution {
     }
 
     public static int maxArea2(int[] height) {
-        int length = height.length;
+        int maxArea = 0;
+        int tmp;
 
-        int maxArea = Math.min(height[0], height[length - 1]) * (length - 1);
-        int tmpArea;
-
-        for (int i = 0, j = length - 1; i < j;) {
+        // 从两侧同时往里缩进，缩进矮的一边(矮的一边已经决定了面积上限[矮边的高度*宽度])，只有缩进矮边才能获得larger area
+        for (int i = 0, j = height.length - 1; i < j;) {
             if (height[i] <= height[j]) {
-                tmpArea = height[i] * (j - 1 );
-                i++;
+                tmp = i;
+                maxArea = Math.max(height[i] * (j - i++), maxArea);
+                while (height[i] < height[tmp]) {
+                    i++;
+                    if (i == j) {
+                        break;
+                    }
+                }
             } else {
-
-                j--;
+                tmp = j;
+                maxArea = Math.max(height[j] * (j-- - i), maxArea);
+                while (height[j] < height[tmp]) {
+                    j--;
+                    if (i == j) {
+                        break;
+                    }
+                }
             }
         }
-
-
-        return 0;
+        return maxArea;
     }
     public static void main(String[] args) {
         int[] height = {10,9,8,7,6,5,4,3,2,1};
-        System.out.println(maxArea(height));
+        System.out.println(maxArea2(height));
     }
 }
