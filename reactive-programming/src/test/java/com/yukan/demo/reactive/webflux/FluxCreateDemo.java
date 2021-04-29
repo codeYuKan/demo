@@ -155,4 +155,40 @@ class FluxCreateDemo {
 
         while (true) {}
     }
+
+    @Test
+    void create_skiptake() {
+        String[] fruitArr1 = new String[]{"Apple1", "Orange1", "Grape1", "Banana1", "Strawberry1"};
+
+        // publisher
+        // 跳过前三个  还可以从时间角度
+        Flux<String> fruitFlux = Flux.fromArray(fruitArr1).skip(3);
+        // 取前三个
+        Flux<String> fruitFlux2 = Flux.fromArray(fruitArr1).take(3);
+
+        fruitFlux.subscribe(f -> log.info("Here's some fruit: {}", f));
+
+    }
+
+    @Test
+    void create_filter() {
+        String[] fruitArr1 = new String[]{"Apple1", "Orange1", "Grape1", "Banana1", "Strawberry1"};
+
+        // publisher
+        Flux<String> fruitFlux = Flux.fromArray(fruitArr1).filter(s -> s.length() > 5);
+
+        fruitFlux.subscribe(f -> log.info("Here's some fruit: {}", f));
+
+    }
+
+    @Test
+    void create_distinct() {
+        String[] fruitArr1 = new String[]{"Apple1", "Apple1", "Orange1", "Grape1", "Banana1", "Strawberry1"};
+
+        // publisher
+        Flux<String> fruitFlux = Flux.fromArray(fruitArr1).distinct();
+
+        fruitFlux.subscribe(f -> log.info("Here's some fruit: {}", f));
+
+    }
 }
