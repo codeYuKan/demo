@@ -18,6 +18,8 @@ public class Student {
 
     private String sex;
 
+    private Student deskMate;
+
     public static Student randomStudent() {
         Student student = new Student();
         //student.setName();

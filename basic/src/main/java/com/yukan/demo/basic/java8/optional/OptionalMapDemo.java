@@ -3,6 +3,7 @@ package com.yukan.demo.basic.java8.optional;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
@@ -26,9 +27,23 @@ public class OptionalMapDemo {
                     testStream()
                             .skip(i)
                             .findFirst() // Produces an Optional
-                            .map(func));
+                            .map(func) // function return T
+                            .orElse("xxx"));
         }
     }
+
+    static void test2(String descr, Function<String, Optional<String>> func) {
+        System.out.println(" ---( " + descr + " )---");
+        for (int i = 0; i <= elements.length; i++) {
+            System.out.println(
+                    testStream()
+                            .skip(i)
+                            .findFirst() // Produces an Optional
+                            .flatMap(func) // function return Optional
+                            .orElse("xxx"));
+        }
+    }
+
 
     public static void main(String[] args) {
         // If Optional is not empty, map() first extracts

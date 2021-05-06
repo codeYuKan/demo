@@ -3,7 +3,6 @@ package com.yukan.demo.basic.java8.optional;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
-import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -27,7 +26,7 @@ public class OptionalFilterDemo {
                     testStream()
                             .skip(i)
                             .findFirst()
-                            .filter(pred));
+                            .filter(pred)); // filter pred is true, or else return Optional.empty();
         }
     }
     public static void main(String[] args) {

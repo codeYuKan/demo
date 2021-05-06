@@ -10,7 +10,8 @@ import java.util.Optional;
  * @email yukan.cn.mail@gmail.com
  */
 @Slf4j
-public class OptionalDemo {
+public class OptionalPresentDemo {
+
     static void basic(Optional<String> stringOptional) {
         if (stringOptional.isPresent()) {
             log.info("{}", stringOptional.get());
@@ -23,5 +24,4 @@ public class OptionalDemo {
         stringOptional.ifPresent(System.out::println);
     }
 
-    //static void orElse
 }
