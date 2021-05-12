@@ -26,4 +26,8 @@ public class Student {
         return student;
     }
 
+    public void printName() {
+        System.out.println(name);
+    }
+
 }
