@@ -1,4 +1,4 @@
-package com.yukan.demo.springboot.listener;
+package com.yukan.demo.springbootdemo.listener;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationListener;

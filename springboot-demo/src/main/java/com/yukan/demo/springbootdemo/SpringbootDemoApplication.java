@@ -1,15 +1,15 @@
-package com.yukan.demo.springboot;
+package com.yukan.demo.springbootdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.yukan.demo.*")
-public class SpringbootApplication {
+@ComponentScan(basePackages = "com.yukan.demo.springbootdemo.*")
+public class SpringbootDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+        SpringApplication.run(SpringbootDemoApplication.class, args);
     }
 
 }

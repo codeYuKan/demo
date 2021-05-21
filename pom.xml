@@ -28,7 +28,7 @@
 		<module>leetcode</module>
 		<module>email</module>
 		<module>component</module>
-		<module>springboot</module>
+		<module>springboot-demo</module>
 		<module>reactive-programming</module>
 		<module>rabbitmq</module>
 	</modules>
