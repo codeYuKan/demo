@@ -1,4 +1,4 @@
-package com.yukan.demo.springboot.listener;
+package com.yukan.demo.springbootdemo.listener;
 
 import lombok.extern.slf4j.Slf4j;
 

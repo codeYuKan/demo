@@ -1,4 +1,4 @@
-package com.yukan.demo.springboot.async;
+package com.yukan.demo.springbootdemo.async;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
