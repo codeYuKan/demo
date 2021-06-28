@@ -7,8 +7,8 @@
 		<groupId>com.yukan.demo</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>springboot</artifactId>
-	<name>springboot</name>
+	<artifactId>springboot-demo</artifactId>
+	<name>springboot-demo</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>jar</packaging>
 

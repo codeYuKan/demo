@@ -1,4 +1,4 @@
-package com.yukan.demo.springboot.redis;
+package com.yukan.demo.springbootdemo.redis;
 
 import com.alibaba.fastjson.TypeReference;
 import lombok.Getter;

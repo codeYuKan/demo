@@ -1,4 +1,4 @@
-package com.yukan.demo.springboot;
+package com.yukan.demo.springbootdemo;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

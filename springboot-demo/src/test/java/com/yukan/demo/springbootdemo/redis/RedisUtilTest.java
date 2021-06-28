@@ -1,6 +1,6 @@
-package com.yukan.demo.springboot.redis;
+package com.yukan.demo.springbootdemo.redis;
 
-import com.yukan.demo.springboot.BaseTest;
+import com.yukan.demo.springbootdemo.BaseTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
